@@ -1,0 +1,32 @@
+.synopsis-dialog {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    box-shadow: none;
+}
+
+.synopsis-dialog-title {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 18px;
+}
+
+.synopsis-dialog-content {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+
+.synopsis-dialog-content p {
+    line-height: 1.5em;
+    margin: 0 0 15px 0;
+    text-align: justify;
+}
+
+
+.synopsis-dialog-actions {
+    position: absolute;
+    left: 140px;
+    bottom: 25px;
+}

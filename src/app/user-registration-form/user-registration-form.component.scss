@@ -1,0 +1,25 @@
+.register-dialog {
+    position: relative;
+    width: 250px;
+    height: 400px;
+    box-shadow: none;
+}
+
+.register-dialog-title {
+    position: absolute;
+    left: 70px;
+    top: 10px;
+    font-size: 18px;
+}
+
+.register-dialog-content {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+.register-dialog-actions {
+    position: absolute;
+    left: 120px;
+    top: 360px;
+}

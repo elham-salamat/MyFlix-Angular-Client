@@ -1,25 +1,25 @@
-.login-dialog {
+.edit-profile-dialog {
     position: relative;
     width: 250px;
-    height: 200px;
+    height: 400px;
     box-shadow: none;
 }
 
-.login-dialog-title {
+.edit-profile-dialog-title {
     position: absolute;
-    left: 65px;
+    left: 60px;
     top: 10px;
     font-size: 18px;
 }
 
-.login-dialog-content {
+.edit-profile-dialog-content {
     position: absolute;
     top: 60px;
     left: 50px;
 }
 
-.login-dialog-actions {
+.edit-profile-dialog-actions {
     position: absolute;
-    left: 120px;
-    top: 180px;
+    left: 80px;
+    top: 360px;
 }

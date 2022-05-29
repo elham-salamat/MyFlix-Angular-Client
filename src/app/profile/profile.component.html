@@ -1,0 +1,32 @@
+<div class="main-content">
+    <app-navbar></app-navbar>
+    <mat-card class="profile-dialog">
+        <mat-card-title class="profile-dialog-title">
+            Personal Information
+        </mat-card-title>
+        <mat-card-content class="profile-dialog-content">
+            <p><b>Username:</b> {{user.Username}}</p>
+            <p><b>Email:</b> {{user.Email}}</p>
+            <p><b>Birthday:</b> {{user.Birthday}}</p>
+            <p><b>Nationality:</b> {{user.Nationality}}</p>
+        </mat-card-content>
+        <mat-card-actions class="profile-dialog-actions">
+            <button
+                mat-raised-button
+                (click)="openEditInfoDialog(user.Username, user.Email, user.Birthday, user.Nationality)"
+                color="primary" 
+            >
+                Edit profile
+            </button>
+            <button
+            mat-raised-button
+            (click)="deleteAccount()"
+            color="primary" 
+            >
+                Delete account
+            </button>
+        </mat-card-actions>
+    </mat-card>
+    
+</div>
+

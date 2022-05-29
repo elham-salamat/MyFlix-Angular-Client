@@ -1,14 +1,12 @@
-<mat-card class="register-dialog">
-    <mat-card-title class="register-dialog-title">
-        Register to MyFlix!
-    </mat-card-title>
-    <mat-card-content class="register-dialog-content">
+<mat-card class="edit-profile-dialog">
+    <mat-card-title class="edit-profile-dialog-title">Edit Your Information</mat-card-title>
+    <mat-card-content class="edit-profile-dialog-content">
         <form>
             <mat-form-field>
                 <input
                     matInput
                     [(ngModel)]="userData.Username"
-                    placeholder="Username"
+                    placehoder="Username"
                     type="text"
                     name="Username"
                     required
@@ -17,18 +15,8 @@
             <mat-form-field>
                 <input
                     matInput
-                    [(ngModel)]="userData.Password"
-                    placeholder="Password"
-                    type="password"
-                    name="Password"
-                    required
-                >
-            </mat-form-field>
-            <mat-form-field>
-                <input
-                    matInput
                     [(ngModel)]="userData.Email"
-                    placeholder="Email"
+                    placehoder="Email"
                     type="email"
                     name="Email"
                     required
@@ -38,7 +26,7 @@
                 <input
                     matInput
                     [(ngModel)]="userData.Birthday"
-                    placeholder="Birthday"
+                    placehoder="Birthday"
                     type="date"
                     name="Birthday"
                 >
@@ -47,20 +35,27 @@
                 <input
                     matInput
                     [(ngModel)]="userData.Nationality"
-                    placeholder="Nationality"
+                    placehoder="Nationality"
                     type="text"
                     name="Nationality"
                 >
             </mat-form-field>
         </form>
     </mat-card-content>
-    <mat-card-actions class="register-dialog-actions">
+    <mat-card-actions class="edit-profile-dialog-actions">
         <button
             mat-raised-button
-            (click)="registerUser()"
+            (click)="editUserInfo()"
             color="primary"
         >
-            Sign Up
+        Edit
+        </button>
+        <button
+            mat-raised-button
+            mat-dialog-close
+            color="Basic"
+        >
+            Close
         </button>
     </mat-card-actions>
 </mat-card>

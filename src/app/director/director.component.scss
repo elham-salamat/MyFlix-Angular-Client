@@ -1,0 +1,40 @@
+.director-dialog {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    box-shadow: none;
+}
+
+.director-dialog-title {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    font-size: 18px;
+}
+
+.director-dialog-content {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.director-dialog-content p {
+    line-height: 2em;
+    margin: 15px 0;
+    text-align: justify;
+}
+
+.director-dialog-content p:first-child {
+    line-height: 2em;
+    margin-top: 0;
+}
+
+.director-dialog-content p> b {
+    margin-right: 5px;
+}
+
+.director-dialog-actions {
+    position: absolute;
+    left: 140px;
+    bottom: 25px;
+}

@@ -1,0 +1,24 @@
+.welcome-page {
+    width: 30%;
+    height: 100vh;
+    margin: 3px auto;
+    text-align: center;
+}
+
+.welcome-page h1 {
+    margin: 25px;
+    margin-top: 250px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.welcome-page button {
+    margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .welcome-page {
+        width: 100%;
+    }
+   
+}

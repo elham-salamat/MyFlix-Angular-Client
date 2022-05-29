@@ -1,0 +1,32 @@
+.genre-dialog {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    box-shadow: none;
+}
+
+.genre-dialog-title {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    font-size: 18px;
+}
+
+.genre-dialog-content {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.genre-dialog-content p {
+    line-height: 2em;
+    margin: 0 0 15px 0;
+    text-align: justify;
+}
+
+
+.genre-dialog-actions {
+    position: absolute;
+    left: 140px;
+    bottom: 25px;
+}
