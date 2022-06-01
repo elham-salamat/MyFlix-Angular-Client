@@ -21,10 +21,18 @@ export class ProfileComponent implements OnInit {
     public router: Router
   ) { }
 
+  /**
+   * This function is running as soon as the component is mounted
+   */
   ngOnInit(): void {
     this.getUser();
   }
 
+  /**
+   * adds a movie to user's favorite list via an API call
+   * @param id 
+   * @function addToFavorite
+   */
   getUser(): void {
     this.fetchApiData.getUserInfo().subscribe((response: any) => {
       this.user = response;
@@ -33,6 +41,9 @@ export class ProfileComponent implements OnInit {
     })
   }
 
+  /**
+   * opens the edit profile dialog from EditProfileComponent, allowing user to edit their details
+   */
   openEditInfoDialog(username: string, email: string, birthday: Date, nationality: string): void {
     this.dialog.open(EditProfileComponent, {
       data: {
@@ -44,6 +55,10 @@ export class ProfileComponent implements OnInit {
     });
   }
 
+  /**
+   * deletes the user profile, redirects to welcome screen
+   * @function deleteUser
+   */
   deleteAccount(): void {
     if (confirm('Are you sure you want to delete your account?')) {
       this.router.navigate(['welcome']).then(() => {
